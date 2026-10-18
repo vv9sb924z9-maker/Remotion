@@ -20,3 +20,7 @@ for skill in "$TMP_DIR"/remotion-skills/skills/*/; do
 done
 
 echo "Installed Remotion skills into $SKILLS_DIR" >&2
+
+# Install the video project's dependencies.
+cd "$CLAUDE_PROJECT_DIR"
+npm install
