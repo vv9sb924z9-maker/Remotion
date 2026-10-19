@@ -1,6 +1,7 @@
 import { Composition, Folder } from "remotion";
 import { Headline } from "./elements/Headline";
 import { ReasonCard } from "./elements/ReasonCard";
+import { HoneyFortress } from "./collage/HoneyFortress";
 import { HoneyFact } from "./HoneyFact";
 import { HookScene } from "./scenes/HookScene";
 import { NumberScene } from "./scenes/NumberScene";
@@ -82,6 +83,16 @@ export const RemotionRoot: React.FC = () => {
               alignItems: "center",
             },
           }}
+        />
+      </Folder>
+      <Folder name="Collage">
+        <Composition
+          id="HoneyFortress"
+          component={HoneyFortress}
+          durationInFrames={150}
+          fps={30}
+          width={1080}
+          height={1920}
         />
       </Folder>
       <Folder name="Elements">
